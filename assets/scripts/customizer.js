@@ -6,3 +6,13 @@
     });
   });
 })(jQuery);
+
+(function($) {
+  // Site title
+  $('.navbar-toggle').click(function() {
+      // $('i#mobile-bars').toggleClass('fa-minus-square-o fa-plus');
+      console.log($(this));
+  });
+  
+})(jQuery);
+

@@ -33,7 +33,38 @@ function excerpt_more() {
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 
-function comicpress_copyright() {
-$output = "<h1>Copyright</h1>";
-return $output;
+
+
+
+
+
+
+
+// Color Picker
+/**
+ * Function that will add the options page under Setting Menu.
+ */
+public function add_page() { 
+     
+    // $page_title, $menu_title, $capability, $menu_slug, $callback_function
+    add_options_page( 'Theme Options', 'Theme Options', 'manage_options', __FILE__, array( $this, 'display_page' ) );
+}
+ 
+/**
+ * Function that will display the options page.
+ */
+public function display_page() { 
+    ?>
+    <div class="wrap">
+     
+        <h2>Theme Options</h2>
+        <form method="post" action="options.php">     
+        <?php 
+            settings_fields(__FILE__);      
+            do_settings_sections(__FILE__);
+            submit_button();
+        ?>
+        </form>
+    </div> <!-- /wrap -->
+    <?php    
 }

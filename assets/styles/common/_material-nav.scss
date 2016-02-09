@@ -11,6 +11,20 @@
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
+ul.dropdown-menu {
+  padding: $dropdown-list-padding;
+  a {
+      padding-top: $dropdown-link-padding;
+      padding-bottom: $dropdown-link-padding;
+  }
+
+
+}
+
+
+
+
+// Imported From Bootstrap Nav SCSS
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
@@ -444,13 +458,16 @@
   }
 
   .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
+    background-color: $clr-white;
+    color: gray;
     &:hover,
     &:focus {
       background-color: $navbar-default-toggle-hover-bg;
+      color: gray;
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: $clr-white;
+      color: gray;
     }
   }
 
