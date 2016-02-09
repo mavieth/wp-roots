@@ -128,11 +128,6 @@ Sage documentation is available at [https://roots.io/sage/docs/](https://roots.i
 
 Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
 
-## Community
+## Contact
 
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+Feel free to contact me at mavieth@gmail.com
