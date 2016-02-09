@@ -1,15 +1,15 @@
-# [Sage](https://roots.io/sage/)
+# [WP Roots - Sage Based Theme](https://michaelvieth.co/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+WP Roots - Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
-* Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
+* Homepage: [https://github.com/mavieth/wp-roots](https://github.com/mavieth/wp-roots)
+* Documentation: [https://github.com/mavieth/wp-rootsdocs/](https://github.com/mavieth/wp-roots)
 * Twitter: [@rootswp](https://twitter.com/rootswp)
-* Newsletter: [Subscribe](http://roots.io/subscribe/)
-* Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
+
+
 
 ## Requirements
 
