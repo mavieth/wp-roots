@@ -20,4 +20,3 @@ function customize_preview_js() {
 }
 add_action('customize_preview_init', __NAMESPACE__ . '\\customize_preview_js');
 
-
