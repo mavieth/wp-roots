@@ -35,36 +35,14 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 
 
+/* ==========================================================================
+   Theme Settings Page
+   ========================================================================== */
+// function theme_settings_page(){}
 
+// function add_theme_menu_item()
+// {
+//   add_menu_page("Theme Panel", "Theme Panel", "manage_options", "theme-panel", "theme_settings_page", null, 99);
+// }
 
-
-
-
-// Color Picker
-/**
- * Function that will add the options page under Setting Menu.
- */
-public function add_page() { 
-     
-    // $page_title, $menu_title, $capability, $menu_slug, $callback_function
-    add_options_page( 'Theme Options', 'Theme Options', 'manage_options', __FILE__, array( $this, 'display_page' ) );
-}
- 
-/**
- * Function that will display the options page.
- */
-public function display_page() { 
-    ?>
-    <div class="wrap">
-     
-        <h2>Theme Options</h2>
-        <form method="post" action="options.php">     
-        <?php 
-            settings_fields(__FILE__);      
-            do_settings_sections(__FILE__);
-            submit_button();
-        ?>
-        </form>
-    </div> <!-- /wrap -->
-    <?php    
-}
+// add_action("admin_menu", "add_theme_menu_item");
