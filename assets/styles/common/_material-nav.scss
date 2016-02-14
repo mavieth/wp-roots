@@ -17,8 +17,6 @@ ul.dropdown-menu {
       padding-top: $dropdown-link-padding;
       padding-bottom: $dropdown-link-padding;
   }
-
-
 }
 
 
@@ -34,6 +32,10 @@ ul.dropdown-menu {
   // Prevent floats from breaking the navbar
   @include clearfix;
 
+  .navbar-default .navbar-toggle:hover {
+    background-color: #4F4F4F;
+  }
+
   @media (min-width: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
   }
@@ -47,22 +49,10 @@ ul.dropdown-menu {
 
 .navbar-header {
   @include clearfix;
-
   @media (min-width: $grid-float-breakpoint) {
     float: left;
   }
 }
-
-
-// Navbar collapse (body)
-//
-// Group your navbar content into this for easy collapsing and expanding across
-// various device sizes. By default, this content is collapsed when <768px, but
-// will expand past that for a horizontal display.
-//
-// To start (on mobile devices) the navbar links, forms, and buttons are stacked
-// vertically and include a `max-height` to overflow in case you have too much
-// content for the user's viewport.
 
 .navbar-collapse {
   overflow-x: visible;
@@ -213,7 +203,7 @@ ul.dropdown-menu {
   margin-right: $navbar-padding-horizontal;
   padding: 9px 10px;
   @include navbar-vertical-align(34px);
-  background-color: transparent;
+  background-color: #4F4F4F;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   border-radius: $border-radius-base;
@@ -458,12 +448,12 @@ ul.dropdown-menu {
   }
 
   .navbar-toggle {
-    background-color: $clr-white;
+    background-color: #101410;
+    border-color: $clr-white;
     color: gray;
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
-      color: gray;
+      background-color: #101410;
     }
     .icon-bar {
       background-color: $clr-white;
@@ -473,7 +463,7 @@ ul.dropdown-menu {
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border-top: 2px solid $clr-white;
   }
 
   // Dropdown menu items

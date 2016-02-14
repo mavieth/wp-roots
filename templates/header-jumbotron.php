@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php //bloginfo('name'); ?>2016 Summit</a>
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
@@ -22,7 +22,17 @@
       ?>
     </nav>
   </div>
+
 <style type="text/css">
+/*header .jumbotron {
+  background: url('<?php echo get_template_directory_uri(); ?>/assets/images/masthead-horizontal.png') no-repeat center;
+  background-size: initial;
+  min-height: 350px;
+  max-width: 100%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}*/
+
 .jumbotron{
     background: url('<?php echo get_template_directory_uri(); ?>/assets/images/masthead-horizontal.png') no-repeat center center; 
     -webkit-background-size: 100% 100%;
@@ -31,25 +41,19 @@
     background-size: 100% 100%;
     min-height: 375px;
 }
-.container-fluid.jumbo {
-    margin: 0px;
-    padding: 0px;
-}
+
 .jumbotron {
     margin-bottom: 0px;
     border-bottom: 30px solid black;
 }
 .jumbotron {
     min-height: 425px;
+    max-width: 1200px;
     text-align: center;
     margin: 0 auto;
 }
-.jumbo {
-  background-color: white;
-}
-.container .jumbotron, .container-fluid .jumbotron {
-    border-radius: 0px;
-}
+
+/*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -84,11 +88,16 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
   .jumbotron{
-      min-height: 400px;
+      min-height: 375px;
   }
+
+}
+#jumbo-background{
+  background: white;
 }
 </style>
-  <div class="container-fluid jumbo">
-    <div class="jumbotron"></div>
-  </div>
+
+<div id="jumbo-background">
+<div class="jumbotron"></div>
+</div>
 </header>
